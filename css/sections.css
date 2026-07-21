@@ -69,3 +69,36 @@ footer{
     padding: 5rem 0; 
 }
 
+/* =========================
+   SKILLS
+========================= */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:2rem;
+    margin-top:3rem;
+}
+
+.skills-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:2rem;
+    box-shadow:var(--shadow);
+}
+
+.skills-card h3{
+    color:var(--primary);
+    margin-bottom:1rem;
+}
+
+.skills-card ul{
+    display:flex;
+    flex-direction:column;
+    gap:.75rem;
+}
+
+.skills-card li{
+    color:var(--gray);
+}
