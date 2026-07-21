@@ -7,3 +7,33 @@
     }
 
 }
+
+@media (max-width: 768px){
+
+    .navbar{
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .hero-content{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text h1{
+        font-size: 2.5rem;
+    }
+
+    .hero-text p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

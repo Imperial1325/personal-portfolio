@@ -19,3 +19,61 @@
     transform:translateY(-5px);
 
 }
+
+/* =========================
+   NAVBAR
+========================= */
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(15,23,42,.95);
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a{
+    color: var(--gray);
+    transition: color .3s;
+}
+
+.nav-links a:hover{
+    color: var(--primary);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn{
+    display: inline-block;
+    padding: 14px 28px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: var(--radius);
+    transition: .3s;
+    margin-right: 1rem;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    background: var(--secondary);
+}
