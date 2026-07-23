@@ -8,6 +8,42 @@
 
 }
 
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+
+        display:none;
+
+        flex-direction:column;
+
+        position:absolute;
+
+        top:70px;
+
+        left:0;
+
+        width:100%;
+
+        background:var(--surface);
+
+        padding:20px 0;
+
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .navbar{
+        position:relative;
+    }
+
+}
+
 @media (max-width: 768px){
 
     .navbar{
