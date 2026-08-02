@@ -1,76 +1,126 @@
-@media(max-width:768px){
+/* =========================================
+   TABLET & MOBILE
+   768px and below
+========================================= */
 
-    .hero{
+@media (max-width: 768px) {
 
-        text-align:center;
+    /* ---------- NAVBAR ---------- */
 
+    .navbar {
+        position: relative;
+        height: 70px;
+        flex-direction: row;
+        padding: 0;
     }
 
-}
-
-@media (max-width:768px){
-
-    .menu-toggle{
-        display:block;
+    .menu-toggle {
+        display: block;
     }
 
-    .nav-links{
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
 
-        display:none;
+        width: 100%;
 
-        flex-direction:column;
-
-        position:absolute;
-
-        top:70px;
-
-        left:0;
-
-        width:100%;
-
-        background:var(--surface);
-
-        padding:20px 0;
-
-    }
-
-    .nav-links.active{
-        display:flex;
-    }
-
-    .navbar{
-        position:relative;
-    }
-
-}
-
-@media (max-width: 768px){
-
-    .navbar{
         flex-direction: column;
-        height: auto;
-        padding: 1rem 0;
+        align-items: center;
+        gap: 1.2rem;
+
+        padding: 25px 0;
+
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 0 0 12px 12px;
     }
 
-    .nav-links{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
+    .nav-links.active {
+        display: flex;
     }
 
-    .hero-content{
-        flex-direction: column-reverse;
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        min-height: auto;
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+        padding-top: 80px;
+    }
+
+    .hero-content {
         text-align: center;
     }
 
-    .hero-text h1{
-        font-size: 2.5rem;
+    .hero h1 {
+        font-size: 2.7rem;
     }
 
-    .hero-text p{
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 260px;
+        height: 260px;
+    }
+
+
+    /* ---------- ABOUT ---------- */
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+
+    /* ---------- PROJECTS ---------- */
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-links {
+        flex-wrap: wrap;
+    }
+
+
+    /* ---------- EXPERIENCE ---------- */
+
+    .timeline {
+        padding-left: 25px;
+    }
+
+    .timeline-dot {
+        left: -24px;
+    }
+
+
+    /* ---------- SECTIONS ---------- */
+
+    section {
+        padding: 80px 0;
+    }
+
+    section h2 {
+        font-size: 2.2rem;
+    }
+
+
+    /* ---------- SCROLL TOP ---------- */
 
     .scroll-top {
         right: 20px;
@@ -78,84 +128,32 @@
         width: 44px;
         height: 44px;
     }
-
-    .hero {
-    min-height: auto;
-    flex-direction: column;
-    text-align: center;
-    gap: 3rem;
-    padding-top: 80px;
 }
 
-.hero h1 {
-    font-size: 2.7rem;
-}
 
-.hero h2 {
-    font-size: 1.5rem;
-}
-
-.hero p {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.hero-buttons {
-    justify-content: center;
-}
-
-.hero-image img {
-    width: 260px;
-    height: 260px;
-}
-
-.about-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-}
-
-.projects-grid {
-    grid-template-columns: 1fr;
-}
-
-.project-links {
-    flex-wrap: wrap;
-}
-
-.timeline {
-    padding-left: 25px;
-}
-
-section {
-    padding: 80px 0;
-}
-
-section h2 {
-    font-size: 2.2rem;
-}
-
-}
-
-@media (max-width:768px){
-
-    .timeline{
-
-        padding-left:25px;
-
-    }
-
-    .timeline-dot{
-
-        left:-24px;
-
-    }
-
-}
+/* =========================================
+   SMALL MOBILE
+   480px and below
+========================================= */
 
 @media (max-width: 480px) {
 
+    /* ---------- GLOBAL ---------- */
+
     .container {
         width: 92%;
+    }
+
+    section {
+        padding: 65px 0;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        padding-top: 50px;
+        gap: 2.5rem;
     }
 
     .hero h1 {
@@ -166,6 +164,10 @@ section h2 {
         font-size: 1.25rem;
     }
 
+    .hero p {
+        font-size: 1rem;
+    }
+
     .hero-image img {
         width: 220px;
         height: 220px;
@@ -174,6 +176,7 @@ section h2 {
     .hero-buttons {
         flex-direction: column;
         align-items: stretch;
+        width: 100%;
     }
 
     .hero-buttons .btn {
@@ -182,12 +185,16 @@ section h2 {
         text-align: center;
     }
 
+
+    /* ---------- PROJECTS ---------- */
+
     .project-content {
         padding: 1.5rem;
     }
 
     .project-links {
         flex-direction: column;
+        gap: 1rem;
     }
 
     .project-links .btn {
@@ -196,12 +203,17 @@ section h2 {
         text-align: center;
     }
 
+
+    /* ---------- EXPERIENCE ---------- */
+
     .timeline-content {
         padding: 20px;
     }
 
-    section {
-        padding: 65px 0;
-    }
 
+    /* ---------- SECTION TITLES ---------- */
+
+    section h2 {
+        font-size: 2rem;
+    }
 }
