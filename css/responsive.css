@@ -72,6 +72,13 @@
         margin-right: auto;
     }
 
+    .scroll-top {
+        right: 20px;
+        bottom: 20px;
+        width: 44px;
+        height: 44px;
+    }
+
 }
 
 @media (max-width:768px){

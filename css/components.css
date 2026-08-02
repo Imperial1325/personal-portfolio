@@ -105,3 +105,48 @@ header{
     background: var(--primary);
     color: var(--white);
 }
+
+/* =========================
+   SCROLL TO TOP
+========================= */
+
+.scroll-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--primary);
+    color: var(--white);
+
+    border: none;
+    border-radius: 50%;
+
+    font-size: 1.4rem;
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+
+    transition: all 0.3s ease;
+
+    z-index: 999;
+}
+
+.scroll-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top:hover {
+    background: var(--secondary);
+    transform: translateY(-4px);
+}
