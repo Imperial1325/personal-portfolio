@@ -19,7 +19,7 @@ A modern, responsive portfolio website showcasing my projects, skills, and profe
 
 ## Live Demo
 
-Coming Soon
+[View Portfolio](https://imperial1325.github.io/personal-portfolio/)
 
 ## Author
 
